@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}A little lost? — NovaShop{% endblock %}
+{% block content %}<div class="shell empty-state spacious"><span class="error-number">404</span><h1>This find has wandered off.</h1><p>The page you're looking for isn't here. Something good is waiting in the collection.</p><a class="btn btn-primary" href="{% url 'store:shop' %}">Explore the collection</a></div>{% endblock %}

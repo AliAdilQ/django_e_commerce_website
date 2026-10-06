@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}Order {{ order.number }} — NovaShop{% endblock %}
+{% block content %}<div class="shell page-space"><nav class="breadcrumbs"><a href="{% url 'orders:list' %}">My orders</a><span>/</span><span>{{ order.number }}</span></nav><div class="page-heading"><span class="eyebrow">A LITTLE EVERYDAY JOY</span><h1>Order {{ order.number }}</h1><p>Placed on {{ order.created_at|date:'F j, Y' }} at {{ order.created_at|date:'H:i' }} UTC</p></div>{% include 'includes/order_info.html' %}<a class="text-link continue-shopping" href="{% url 'orders:list' %}">{% include 'includes/icon.html' with name='arrow-left' %} Back to my orders</a></div>{% endblock %}

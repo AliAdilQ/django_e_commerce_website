@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+*.log
+db.sqlite3
+db.sqlite3-*
+staticfiles/
+media/products/*
+!media/products/.gitkeep
+playwright-report/
+test-results/
